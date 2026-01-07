@@ -6,20 +6,24 @@
   <title>Boost Your Fuliza Limit | Get Instant Increase</title>
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="photos/favicon.png">
-  <link rel="apple-touch-icon" href="photos/favicon.png">
+  <link rel="icon" type="image/png" href="https://fulizaincrement254.vercel.app/favicon.png">
+  <link rel="apple-touch-icon" href="https://fulizaincrement254.vercel.app/favicon.png">
+  <link rel="shortcut icon" href="https://fulizaincrement254.vercel.app/favicon.png">
   
   <!-- Meta Tags for Social Sharing -->
   <meta property="og:title" content="Boost Your Fuliza Limit - Get Instant Increase" />
   <meta property="og:description" content="Fast, secure & trusted by thousands. Increase your Fuliza limit instantly with transparent fees and 24/7 support." />
-  <meta property="og:image" content="logo.png" />
-  <meta property="og:url" content="https://fulizaincrement254.vercel.app/" />
+  <meta property="og:image" content="https://fulizaincrement254.vercel.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://fulizaincrement254.vercel.app" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Fuliza Boost" />
   
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Boost Your Fuliza Limit" />
   <meta name="twitter:description" content="Fast, secure & trusted by thousands. Get instant Fuliza limit increase." />
-  <meta name="twitter:image" content="logo.png" />
+  <meta name="twitter:image" content="https://fulizaincrement254.vercel.app/og-image.png" />
   
   <meta name="description" content="Boost your M-Pesa Fuliza limit instantly. Secure, fast approval with transparent fees. Trusted by 5000+ users. 24/7 customer support available." />
   <meta name="keywords" content="Fuliza, M-Pesa, limit increase, loan, Kenya, instant approval" />
@@ -48,7 +52,7 @@
     .loan-box { border: 2px solid #cbd5e1; border-radius: 10px; padding: 16px 12px; text-align: center; cursor: pointer; transition: 0.3s; }
     .loan-box.selected { border-color: var(--primary); background: #eff6ff; }
     .amount { font-size: 1.15rem; font-weight: 800; color: var(--primary); }
-    .fee { font-size: 0.8rem; color: var(--text-muted); background: #f1f5f9; padding: 4px 10px; border-radius: 20px; }
+    .fee { font-size: 0.8rem; color: var(--text-muted); background: #f1f5f9; padding: 4px 10px; border-radius: 20px; margin-top: 8px; display: inline-block; }
 
     .input-wrapper { margin-bottom: 18px; text-align: left; width: 100%; }
     .input-label { display: block; font-weight: 600; margin-bottom: 8px; font-size: 0.9rem; color: var(--text-dark); }
@@ -60,6 +64,11 @@
       border-radius: 10px;
       font-size: 1rem;
       outline: none;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .custom-input:focus {
+      border-color: var(--primary);
     }
 
     .phone-input-group {
@@ -71,6 +80,11 @@
       overflow: hidden;
       width: 100%;
       max-width: 100%;
+      transition: border-color 0.3s;
+    }
+
+    .phone-input-group:focus-within {
+      border-color: var(--primary);
     }
 
     .phone-prefix {
@@ -93,10 +107,31 @@
       outline: none;
       min-width: 0;
       background: transparent;
+      font-family: 'Poppins', sans-serif;
     }
 
-    .cta { background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 14px; padding: 18px; color: #fff; font-weight: 700; cursor: pointer; border: none; width: 100%; }
-    .cta.disabled { opacity: 0.6; cursor: not-allowed; }
+    .cta { 
+      background: linear-gradient(135deg, var(--primary), var(--secondary)); 
+      border-radius: 14px; 
+      padding: 18px; 
+      color: #fff; 
+      font-weight: 700; 
+      cursor: pointer; 
+      border: none; 
+      width: 100%; 
+      font-size: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .cta:hover:not(.disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+    }
+    
+    .cta.disabled { 
+      opacity: 0.6; 
+      cursor: not-allowed; 
+    }
 
     /* Hero Header Styles */
     .hero-header {
@@ -345,6 +380,26 @@
       margin-top: 20px;
     }
 
+    /* SweetAlert2 Custom Styles */
+    .swal2-popup {
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .swal2-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      color: var(--text-dark);
+    }
+
+    .swal2-confirm {
+      background: linear-gradient(135deg, var(--primary), var(--secondary)) !important;
+      border-radius: 10px;
+      padding: 12px 24px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+    }
+
     /* Responsive Design */
     @media (max-width: 480px) {
       .hero-title {
@@ -417,7 +472,7 @@
     </div>
 
     <div class="card">
-      <h3 style="margin-bottom:15px;">Select Limit</h3>
+      <h3 style="margin-bottom:15px; color: var(--text-dark);">Select Limit</h3>
       <div class="grid" id="loan-grid"></div>
       <button class="cta disabled" id="get-limit-btn" disabled>Select a Limit</button>
     </div>
@@ -464,10 +519,10 @@
         </div>
 
         <div class="social-links">
-          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
 
         <p class="copyright">&copy; 2026 Fuliza Boost. All rights reserved.</p>
@@ -509,11 +564,11 @@
 
     getBtn.onclick = async () => {
       const { value: formValues } = await Swal.fire({
-        title: 'Details',
+        title: 'Enter Your Details',
         html: `
           <div class="input-wrapper">
             <label class="input-label">ID Number</label>
-            <input id="swal-id" class="custom-input" type="number" placeholder="ID Number">
+            <input id="swal-id" class="custom-input" type="number" placeholder="Enter your ID number">
           </div>
           <div class="input-wrapper">
             <label class="input-label">M-Pesa Number</label>
@@ -523,22 +578,41 @@
             </div>
           </div>`,
         confirmButtonText: 'Proceed to Payment',
+        showCancelButton: true,
+        cancelButtonText: 'Cancel',
+        focusConfirm: false,
         preConfirm: () => {
           const id = document.getElementById('swal-id').value;
           const phone = document.getElementById('swal-phone').value;
-          if (!id || phone.length < 9) {
-             Swal.showValidationMessage('Enter valid ID and 9-digit Phone');
+          if (!id || id.length < 6) {
+             Swal.showValidationMessage('Please enter a valid ID number');
              return false;
           }
-          return { id, phone };
+          if (!phone || phone.length !== 9) {
+             Swal.showValidationMessage('Please enter a valid 9-digit phone number');
+             return false;
+          }
+          return { id, phone: '+254' + phone };
         }
       });
 
       if (formValues) {
-        window.location.href = PAYMENT_LINK;
+        // Show loading
+        Swal.fire({
+          title: 'Processing...',
+          text: 'Redirecting to payment page',
+          allowOutsideClick: false,
+          didOpen: () => {
+            Swal.showLoading();
+          }
+        });
+        
+        // Redirect after a short delay
+        setTimeout(() => {
+          window.location.href = PAYMENT_LINK;
+        }, 1000);
       }
     };
   </script>
 </body>
 </html>
-
