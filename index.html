@@ -5,29 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <title>Boost Your Fuliza Limit | Get Instant Increase</title>
   
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://fulizaincrement254.vercel.app/favicon.png">
-  <link rel="apple-touch-icon" href="https://fulizaincrement254.vercel.app/favicon.png">
-  <link rel="shortcut icon" href="https://fulizaincrement254.vercel.app/favicon.png">
-  
-  <!-- Meta Tags for Social Sharing -->
-  <meta property="og:title" content="Boost Your Fuliza Limit - Get Instant Increase" />
-  <meta property="og:description" content="Fast, secure & trusted by thousands. Increase your Fuliza limit instantly with transparent fees and 24/7 support." />
-  <meta property="og:image" content="https://fulizaincrement254.vercel.app/logo.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:url" content="https://fulizaincrement254.vercel.app" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Fuliza Boost" />
-  
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Boost Your Fuliza Limit" />
-  <meta name="twitter:description" content="Fast, secure & trusted by thousands. Get instant Fuliza limit increase." />
-  <meta name="twitter:image" content="https://fulizaincrement254.vercel.app/logo.png" />
-  
-  <meta name="description" content="Boost your M-Pesa Fuliza limit instantly. Secure, fast approval with transparent fees. Trusted by 5000+ users. 24/7 customer support available." />
-  <meta name="keywords" content="Fuliza, M-Pesa, limit increase, loan, Kenya, instant approval" />
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
@@ -57,483 +34,66 @@
     .input-wrapper { margin-bottom: 18px; text-align: left; width: 100%; }
     .input-label { display: block; font-weight: 600; margin-bottom: 8px; font-size: 0.9rem; color: var(--text-dark); }
     
-    .custom-input {
-      width: 100%;
-      padding: 12px;
-      border: 2px solid var(--border-color);
-      border-radius: 10px;
-      font-size: 1rem;
-      outline: none;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .custom-input:focus {
-      border-color: var(--primary);
-    }
-
-    .phone-input-group {
-      display: flex;
-      align-items: stretch;
-      border: 2px solid var(--border-color);
-      border-radius: 10px;
-      background: #fff;
-      overflow: hidden;
-      width: 100%;
-      max-width: 100%;
-      transition: border-color 0.3s;
-    }
-
-    .phone-input-group:focus-within {
-      border-color: var(--primary);
-    }
-
-    .phone-prefix {
-      background: #f8fafc;
-      padding: 12px 10px;
-      font-weight: 700;
-      color: var(--text-muted);
-      border-right: 2px solid var(--border-color);
-      white-space: nowrap;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-    }
-
-    .phone-input {
-      flex: 1;
-      border: none;
-      padding: 12px;
-      font-size: 1rem;
-      outline: none;
-      min-width: 0;
-      background: transparent;
-      font-family: 'Poppins', sans-serif;
-    }
-
     .cta { 
       background: linear-gradient(135deg, var(--primary), var(--secondary)); 
-      border-radius: 14px; 
-      padding: 18px; 
-      color: #fff; 
-      font-weight: 700; 
-      cursor: pointer; 
-      border: none; 
-      width: 100%; 
-      font-size: 1rem;
-      transition: transform 0.2s, box-shadow 0.2s;
+      border-radius: 14px; padding: 18px; color: #fff; font-weight: 700; cursor: pointer; 
+      border: none; width: 100%; font-size: 1rem; transition: transform 0.2s, box-shadow 0.2s;
     }
     
-    .cta:hover:not(.disabled) {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
-    }
-    
-    .cta.disabled { 
-      opacity: 0.6; 
-      cursor: not-allowed; 
-    }
+    .cta:hover:not(.disabled) { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3); }
+    .cta.disabled { opacity: 0.6; cursor: not-allowed; }
 
-    /* Hero Header Styles */
     .hero-header {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
-      border-radius: 20px;
-      padding: 32px 24px;
-      text-align: center;
-      color: white;
-      box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.3);
-      margin-bottom: 24px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-header::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      right: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-      animation: pulse 4s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); opacity: 0.5; }
-      50% { transform: scale(1.1); opacity: 0.8; }
+      border-radius: 20px; padding: 32px 24px; text-align: center; color: white; margin-bottom: 24px;
     }
 
     .icon-badge {
-      background: rgba(255, 255, 255, 0.2);
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 16px;
-      backdrop-filter: blur(10px);
-      position: relative;
-      z-index: 1;
+      background: rgba(255, 255, 255, 0.2); width: 60px; height: 60px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;
     }
 
-    .icon-badge i {
-      font-size: 32px;
-      color: #fff;
-      animation: bounce 2s ease-in-out infinite;
-    }
+    .hero-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; }
+    .hero-subtitle { font-size: 0.9rem; opacity: 0.9; margin-bottom: 20px; }
 
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
-
-    .hero-title {
-      font-size: 1.75rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-subtitle {
-      font-size: 0.95rem;
-      opacity: 0.95;
-      line-height: 1.5;
-      margin-bottom: 20px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .trust-badges {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      position: relative;
-      z-index: 1;
-    }
-
-    .badge-item {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(255, 255, 255, 0.2);
-      padding: 8px 14px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      backdrop-filter: blur(10px);
-    }
-
-    .badge-item i {
-      font-size: 14px;
-    }
-
-    /* Features Section */
-    .features-section {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 16px;
-      margin: 24px 0;
-    }
-
-    .feature-card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 20px 16px;
-      text-align: center;
-      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.15);
-    }
-
-    .feature-icon {
-      width: 50px;
-      height: 50px;
-      background: linear-gradient(135deg, #eff6ff, #dbeafe);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 12px;
-    }
-
-    .feature-icon i {
-      font-size: 22px;
-      color: var(--primary);
-    }
-
-    .feature-card h4 {
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--text-dark);
-      margin-bottom: 6px;
-    }
-
-    .feature-card p {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      line-height: 1.4;
-    }
-
-    /* Footer Styles */
-    .footer {
-      background: linear-gradient(135deg, #1e293b, #334155);
-      border-radius: 20px;
-      padding: 32px 24px;
-      margin-top: 32px;
-      color: #fff;
-      text-align: center;
-    }
-
-    .footer-content {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .footer-logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-
-    .footer-logo i {
-      font-size: 24px;
-      color: #60a5fa;
-    }
-
-    .footer-tagline {
-      font-size: 0.9rem;
-      opacity: 0.8;
-      margin-bottom: 24px;
-    }
-
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 16px;
-      margin-bottom: 24px;
-    }
-
-    .footer-links a {
-      color: #cbd5e1;
-      text-decoration: none;
-      font-size: 0.85rem;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: color 0.3s ease;
-    }
-
-    .footer-links a:hover {
-      color: #60a5fa;
-    }
-
-    .footer-links a i {
-      font-size: 12px;
-    }
-
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      margin-bottom: 24px;
-    }
-
-    .social-icon {
-      width: 40px;
-      height: 40px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      backdrop-filter: blur(10px);
-    }
-
-    .social-icon:hover {
-      background: #60a5fa;
-      transform: translateY(-3px);
-    }
-
-    .social-icon i {
-      font-size: 16px;
-    }
-
-    .copyright {
-      font-size: 0.8rem;
-      opacity: 0.7;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      padding-top: 20px;
-      margin-top: 20px;
-    }
-
-    /* SweetAlert2 Custom Styles */
-    .swal2-popup {
-      border-radius: 16px;
-      padding: 24px;
-    }
-
-    .swal2-title {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.5rem;
-      color: var(--text-dark);
-    }
-
-    .swal2-confirm {
-      background: linear-gradient(135deg, var(--primary), var(--secondary)) !important;
-      border-radius: 10px;
-      padding: 12px 24px;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 480px) {
-      .hero-title {
-        font-size: 1.5rem;
-      }
-      
-      .hero-subtitle {
-        font-size: 0.85rem;
-      }
-
-      .trust-badges {
-        gap: 8px;
-      }
-
-      .badge-item {
-        font-size: 0.75rem;
-        padding: 6px 10px;
-      }
-
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-      }
-
-      .features-section {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-links {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      .footer {
-        padding: 24px 16px;
-      }
-    }
-
-    @media (min-width: 481px) and (max-width: 768px) {
-      .features-section {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
+    .footer { background: #1e293b; border-radius: 20px; padding: 24px; margin-top: 32px; color: #fff; text-align: center; }
+    .copyright { font-size: 0.8rem; opacity: 0.7; margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; }
+    
+    /* Phone Input Styles for Popup */
+    .phone-input-group { display: flex; border: 2px solid var(--border-color); border-radius: 10px; overflow: hidden; }
+    .phone-prefix { background: #f8fafc; padding: 12px; font-weight: 700; border-right: 2px solid var(--border-color); }
+    .phone-input { flex: 1; border: none; padding: 12px; outline: none; }
+    .custom-input { width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 10px; }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <!-- Hero Header -->
     <div class="hero-header">
-      <div class="icon-badge">
-        <i class="fas fa-bolt"></i>
-      </div>
-      <h1 class="hero-title">Boost Your Fuliza Limit</h1>
-      <p class="hero-subtitle">Get instant access to higher limits. Fast, secure & trusted by thousands.</p>
-      <div class="trust-badges">
-        <div class="badge-item">
-          <i class="fas fa-shield-alt"></i>
-          <span>100% Secure</span>
-        </div>
-        <div class="badge-item">
-          <i class="fas fa-clock"></i>
-          <span>Instant Approval</span>
-        </div>
-        <div class="badge-item">
-          <i class="fas fa-users"></i>
-          <span>5000+ Users</span>
-        </div>
-      </div>
+      <div class="icon-badge"><i class="fas fa-bolt fa-2x"></i></div>
+      <h1 class="hero-title">Lipia Sasa Boost</h1>
+      <p class="hero-subtitle">Select your desired limit and pay the activation fee to upgrade instantly.</p>
     </div>
 
     <div class="card">
-      <h3 style="margin-bottom:15px; color: var(--text-dark);">Select Limit</h3>
+      <h3 style="margin-bottom:15px; color: var(--text-dark); text-align: center;">Select New Limit</h3>
       <div class="grid" id="loan-grid"></div>
-      <button class="cta disabled" id="get-limit-btn" disabled>Select a Limit</button>
+      <button class="cta disabled" id="get-limit-btn" disabled>Select a Limit Above</button>
     </div>
 
-    <!-- Features Section -->
-    <div class="features-section">
-      <div class="feature-card">
-        <div class="feature-icon">
-          <i class="fas fa-lock"></i>
-        </div>
-        <h4>Secure Process</h4>
-        <p>Your data is encrypted and protected</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <i class="fas fa-rocket"></i>
-        </div>
-        <h4>Fast Approval</h4>
-        <p>Get approved within minutes</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <i class="fas fa-headset"></i>
-        </div>
-        <h4>24/7 Support</h4>
-        <p>We're here to help anytime</p>
-      </div>
-    </div>
-
-    <!-- Footer -->
     <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <i class="fas fa-bolt"></i>
-          <span>Fuliza Boost</span>
-        </div>
-        <p class="footer-tagline">Empowering financial freedom for everyone</p>
-        
-        <div class="footer-links">
-          <a href="#"><i class="fas fa-info-circle"></i> About Us</a>
-          <a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
-          <a href="#"><i class="fas fa-file-contract"></i> Terms of Service</a>
-          <a href="#"><i class="fas fa-envelope"></i> Contact</a>
-        </div>
-
-        <div class="social-links">
-          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        </div>
-
-        <p class="copyright">&copy; 2026 Fuliza Boost. All rights reserved.</p>
-      </div>
+      <div style="font-weight: 700; margin-bottom: 10px;">Fuliza Boost</div>
+      <p style="font-size: 0.8rem; opacity: 0.8;">Secure and Automated Limit Increases</p>
+      <p class="copyright">&copy; 2026 Fuliza Boost. All rights reserved.</p>
     </footer>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
 
   <script>
-    const PAYMENT_LINK = "https://lipia-online.vercel.app/link/Paultech";
+    // Base Payment Link
+    const BASE_PAYMENT_URL = "https://lipia-online.vercel.app/link/Paultech";
+
     const loanOptions = [
       { amount: 5000, fee: 49 }, { amount: 7500, fee: 75 },
       { amount: 10000, fee: 100 }, { amount: 12500, fee: 120 },
@@ -547,74 +107,70 @@
     const loanGrid = document.getElementById('loan-grid');
     const getBtn = document.getElementById('get-limit-btn');
 
+    // Build the selection grid
     loanOptions.forEach(loan => {
       const box = document.createElement('div');
       box.className = 'loan-box';
-      box.innerHTML = `<div class="amount">Ksh ${loan.amount.toLocaleString()}</div><div class="fee">Fee: Ksh ${loan.fee}</div>`;
+      box.innerHTML = `
+        <div class="amount">Ksh ${loan.amount.toLocaleString()}</div>
+        <div class="fee">Fee: Ksh ${loan.fee}</div>
+      `;
       box.onclick = () => {
         document.querySelectorAll('.loan-box').forEach(b => b.classList.remove('selected'));
         box.classList.add('selected');
         selectedLoan = loan;
         getBtn.classList.remove('disabled');
         getBtn.disabled = false;
-        getBtn.innerText = `Get Ksh ${loan.amount.toLocaleString()} Now`;
+        getBtn.innerText = `Upgrade to Ksh ${loan.amount.toLocaleString()}`;
       };
       loanGrid.appendChild(box);
     });
 
+    // Handle the button click
     getBtn.onclick = async () => {
+      if(!selectedLoan) return;
+
       const { value: formValues } = await Swal.fire({
-        title: 'Enter Your Details',
+        title: 'Recipient Details',
         html: `
-          <div class="input-wrapper">
-            <label class="input-label">ID Number</label>
-            <input id="swal-id" class="custom-input" type="number" placeholder="Enter your ID number">
-          </div>
           <div class="input-wrapper">
             <label class="input-label">M-Pesa Number</label>
             <div class="phone-input-group">
               <div class="phone-prefix">+254</div>
               <input id="swal-phone" class="phone-input" type="tel" placeholder="712345678" maxlength="9">
             </div>
-          </div>`,
-        confirmButtonText: 'Proceed to Payment',
+          </div>
+          <p style="font-size: 0.8rem; color: #666;">You will pay <b>Ksh ${selectedLoan.fee}</b> to activate this limit.</p>`,
+        confirmButtonText: 'Pay Now',
         showCancelButton: true,
-        cancelButtonText: 'Cancel',
-        focusConfirm: false,
         preConfirm: () => {
-          const id = document.getElementById('swal-id').value;
           const phone = document.getElementById('swal-phone').value;
-          if (!id || id.length < 6) {
-             Swal.showValidationMessage('Please enter a valid ID number');
-             return false;
-          }
           if (!phone || phone.length !== 9) {
-             Swal.showValidationMessage('Please enter a valid 9-digit phone number');
+             Swal.showValidationMessage('Enter a valid 9-digit phone number');
              return false;
           }
-          return { id, phone: '+254' + phone };
+          return { phone: '+254' + phone };
         }
       });
 
       if (formValues) {
-        // Show loading
         Swal.fire({
-          title: 'Processing...',
-          text: 'Redirecting to payment page',
+          title: 'Connecting...',
+          text: `Redirecting to pay Ksh ${selectedLoan.fee}`,
           allowOutsideClick: false,
-          didOpen: () => {
-            Swal.showLoading();
-          }
+          didOpen: () => { Swal.showLoading(); }
         });
         
-        // Redirect after a short delay
+        // REDIRECTION LOGIC:
+        // This takes the base link and appends the fee as a parameter.
+        // Example: https://lipia-online.vercel.app/link/Paultech?amount=49
+        const finalPaymentLink = `${BASE_PAYMENT_URL}?amount=${selectedLoan.fee}`;
+        
         setTimeout(() => {
-          window.location.href = PAYMENT_LINK;
-        }, 1000);
+          window.location.href = finalPaymentLink;
+        }, 1200);
       }
     };
   </script>
 </body>
 </html>
-
-
